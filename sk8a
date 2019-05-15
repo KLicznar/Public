@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# koment 
 
 result=`ps aux| grep -i "test" | grep -v "grep" | wc -l`
 while [ $result -ge 1 ]; do
