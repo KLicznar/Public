@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+result=`ps aux| grep -i "test" | grep -v "grep" | wc -l`
+while [ $result -ge 1 ]; do
+        echo "zajete"
+	# $result  $BASH_SOURCE  
+	echo `ps aux | grep -i "sk8*"`
+	sleep 5
+	result=`ps aux | grep -i "test" | grep -v "grep" | wc -l`
+        
+done
+cp /home/oracle/loc1/file1.txt /home/oracle/loc2
+echo "Plik skopiowany! $BASH_SOURCE "
