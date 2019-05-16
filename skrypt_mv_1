@@ -7,7 +7,7 @@ while [ $result -ge 1 ]; do
         
 	echo "zajete"
 	
-	sleep 5
+	sleep $[ ($RANDOM % 5 ) + 1]s
 	
 	result=`ps aux | grep -i "skrypt_mv_*" | grep -v "grep" | grep -v $BASH_SOURCE | wc -l`
         
