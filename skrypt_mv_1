@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+result=`ps aux| grep -i "skrypt_mv_*" | grep -v "grep" | grep -v $BASH_SOURCE | wc -l`
+
+while [ $result -ge 1 ]; do
+        
+	echo "zajete"
+	
+	sleep 5
+	
+	result=`ps aux | grep -i "skrypt_mv_*" | grep -v "grep" | grep -v $BASH_SOURCE | wc -l`
+        
+done
+#W celach testowych uzywam 'cp' zamiast 'mv'
+cp /home/oracle/loc1/file1.txt /home/oracle/loc2
+
+echo "Plik przeniesiony! $BASH_SOURCE "
