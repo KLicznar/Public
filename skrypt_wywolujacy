@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sh ./skrypt_mv_1
+sh ./skrypt_mv_2
+sh ./skrypt_mv_3
+sh ./skrypt_mv_4
+sh ./skrypt_mv_5
+sh ./skrypt_mv_6
+sh ./skrypt_mv_7
+sh ./skrypt_mv_8
+sh ./skrypt_mv_9
+sh ./skrypt_mv_10
